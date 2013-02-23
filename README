@@ -2,6 +2,19 @@ This should serve as a place to retain a default CakePHP app WITH more bells and
 
 So far this default App includes:
 
+=INSTALLATION=
+To install, simply clone cakePHP and replace it's app folder with a copy of this repo. This will jump start you right into twitter bootstrap using LESS. 
+
+=LESS=
+I have added a default LESS file called "twibo.less". Simply compile the bootstrap.less file with your favorite LESS compiler. My favorite is lessc and seems to work best for this application. 
+
+Compiled your css file into the CSS folder and name it bootstrap.min.css, This is the command in lessc
+
+`lessc bootstrap.less ../css/bootstrap.min.css --yui-compress`
+
+
+=Features=
 --Twitter Bootstrap
---Jquery 1.6.2
+--LESS
+--Jquery 1.7.2
 --New Homepage (That ACTUALLY makes sense, from Twitter Bootstrap)
