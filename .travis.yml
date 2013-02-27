@@ -7,15 +7,11 @@ php:
 
 env:
   - DB=mysql
-  - DB=sqlite
-  - DB=pgsql
 
 before_script:
   - sh -c "cd .. ; mkdir lib ; cd lib ; git clone --depth 1 git://github.com/cakephp/cakephp ; cd cakephp ; git checkout -qf 2.1.4"
   - sh -c "cd ../lib ; ln -s cakephp/lib/Cake Cake"
   - sh -c "if [ '$DB' = 'mysql' ]; then mysql -e 'CREATE DATABASE cakeapp_test;'; fi"
-  - sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE DATABASE cakeapp_test;' -U postgres; fi"
-  - sh -c "if [ '$DB' = 'pgsql' ]; then psql -c 'CREATE SCHEMA cakeapp_test;' -U postgres -d cakeapp_test; fi"
   - cp Config/settings.yml.install Config/settings.yml
   - cp Config/croogo.php.install Config/croogo.php
   - set +H
