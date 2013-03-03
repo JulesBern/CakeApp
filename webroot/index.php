@@ -64,7 +64,7 @@ if (!defined('APP_DIR')) {
  */
 //define('CAKE_CORE_INCLUDE_PATH', ROOT . DS . 'lib');
 //define('CAKE_CORE_INCLUDE_PATH', DS.'var'.DS.'CakePHP'.DS.'simplescripts-current'.DS.'lib');
-define('CAKE_CORE_INCLUDE_PATH', DS.'Users'.DS.'slewis'.DS.'CoreCode'.DS.'cakephp-2.3.0'.DS.'lib');
+//define('CAKE_CORE_INCLUDE_PATH', DS.'Users'.DS.'slewis'.DS.'CoreCode'.DS.'cakephp-2.3.0'.DS.'lib');
 
 /**
  * Editing below this line should NOT be necessary.
